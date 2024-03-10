@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="public/styles/assets/css/styles2.css">
+    <script defer src="public/styles/Js/script.js"></script>
+
+    <script src="https://kit.fontawesome.com/31e61729e7.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="forms-container">
+        <div class="forms">
+                <!--Login form-->
+            <div class="login-form-container">
+                <h1>Login</h1>
+                <form class="form">
+                    <i class="fa-solid fa-at"></i>
+                    <input type="text" placeholder="Enter Your Email/Username" name="" class="text-input">
+                    <br>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Enter Your Password" name="" class="text-input">
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <br>
+                    <a href="#" id="forgot-password">Forgot Password?</a>
+                    <input type="checkbox" id="logCheck">
+                    <label for="logCheck" class="text">Remember me</label>
+                    <input type="submit" value="Login" id="button">
+                    <br>
+                    <div class="container">
+                        <p>Don't have an Account?</p>
+                        <a href="#" type="button" id="signup-link" class="signup-link">Signup Here</a>
+                    </div>
+                </form>
+            </div>
+
+            <!--Registration form-->
+            <div class="signup-container">
+                <h1>Signup</h1>
+                <form class="signup-form" action="#">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" placeholder="Enter a Username" class="username-input">
+                    <br>
+                    <i class="fa-solid fa-at"></i>
+                    <input type="text" placeholder="Enter Your Email" name="" class="email-input">
+                    <br>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Enter a Password" name="" class="password-input">
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <br>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Confirm Password" name="" class="confirm-password">
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <br>
+                    <input type="checkbox" id="logCheck">
+                    <label for="logCheck" class="text">Remember me</label>
+                    <input type="submit" value="Signup" id="signup-button">
+                    <br>
+                    <div class="login-container">
+                        <p>Already Have an Account?</p>
+                        <a href="#" type="button" id="login-link" class="login-link">Login Here</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    
+</body>
+</html>

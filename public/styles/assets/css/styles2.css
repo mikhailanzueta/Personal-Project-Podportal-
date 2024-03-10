@@ -1,0 +1,350 @@
+/* FORM HTML */
+:root {
+    --grey: #A2A7A5;
+    --white: #FFFFFF;
+    --light-mint: #B6D0C7;
+    --black: #000000;
+    --anti-flash-white: #EFEFF0;
+    --dark-purple: #27233A;
+    --davys-gray: #505168;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-position: center;
+    background-color: var(--dark-purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms-container {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+}
+.forms-container .forms {
+    display: flex;
+    height: 600px;
+    align-items: center;
+    width: 200%;
+    transition: height 0.3s ease;
+}
+
+.forms-container .login-form-container {
+    transition: margin-left 0.2s ease;
+}
+
+.forms-container.active .login-form-container {
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.2s ease, opacity 0.15s ease;
+}
+
+.forms-container .signup-container {
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+
+.forms-container.active .signup-container {
+    margin-left: 200px;
+    height: 650px;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.forms-container.active .forms {
+    height: 700px;
+}
+
+/* LOGIN FORM CSS */
+.login-form-container {
+    width: 450px;
+    height: 470px;
+    background-color: var(--davys-gray);
+    box-sizing: border-box;
+    margin-top: 180px;
+}
+
+.login-form-container .fa-user {
+    color: var(--anti-flash-white);
+    background-color: var(--dark-gray);
+    font-size: 32px;
+    position: relative;
+    left: 206px;
+    top: -16px;
+}
+
+
+h1 {
+    font-family: "Roboto Condensed";
+    color: var(--anti-flash-white);
+    padding-left: 185px;
+    padding-top: 25px;
+}
+
+.login-form-container h1::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background-color: var(--anti-flash-white);
+    bottom: 0;
+    left: 0;
+    border-radius: 25px;
+}
+
+
+
+.form {
+    padding-left: 50px;
+    padding-top: 70px;
+}
+
+.form p {
+    margin-bottom: 12px;
+    font-family: "Roboto Condensed";
+    color: var(--white);
+    font-size: 15px;
+}
+
+.text-input {
+    width: 78%;
+    margin-bottom: 30px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 20px 34px;
+    border-bottom: 1px solid var(--white);
+    background: transparent;
+    border-color: var(--white);
+    outline: none;
+    height: 30px;
+    color: var(--white);
+    font-size: 16px;
+}
+
+.text-input::placeholder {
+    color: var(--anti-flash-white);
+}
+
+.form i {
+    color: var(--light-mint);
+    font-size: 16px;
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 8px;
+}
+
+.form .fa-eye-slash {
+    position: absolute;
+    font-size: 16px;
+    right: 900px;
+    display: none;
+}
+
+#button {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--black);
+    color: var(--white);
+    width: 77%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: var(--dark-purple);
+}
+
+
+.form a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.checkbox {
+    margin-top: 20%;
+    margin-left: 20px;
+}
+
+.text {
+    color: var(--white);
+    font-size: 15px;
+}
+
+#forgot-password {
+    margin-right: 90px;
+}
+
+.container {
+    display: flex;
+    margin-left: 46px;
+}
+
+.container p{
+    margin-right: 10px;
+}
+
+.container a {
+    font-size: 16px;
+    font-family: "RobotO Condensed";
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+/* END OF LOGIN FORM CSS */
+
+/* SIGN UP FORM CSS */
+.signup-container {
+    width: 450px;
+    height: 550px;
+    background-color: var(--davys-gray);
+    box-sizing: border-box;
+    margin-top: 180px;
+    margin-left: 80px;
+}
+
+.signup-form {
+    padding-left: 60px;
+    padding-top: 70px;
+}
+
+.signup-form .username-input,
+.email-input,
+.password-input,
+.confirm-password {
+    margin-bottom: 24px;
+    width: 78%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid var(--anti-flash-white);
+    padding: 20px 34px;
+    background: transparent;
+    border-color: var(--white);
+    outline: none;
+    height: 30px;
+    color: var(--white);
+    font-size: 16px;
+}
+
+.signup-form input::placeholder {
+    color: var(--anti-flash-white);
+}
+
+.signup-form i {
+    color: var(--light-mint);
+    font-size: 16px;
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 8px;
+}
+
+.signup-form .fa-eye-slash {
+    position: absolute;
+    right: 350px;
+    display: none;
+}
+
+.signup-form #logcheck {
+    width: 0;
+    margin-top: 20%;
+    margin-left: 20px;
+}
+
+.signup-form .text {
+    color: var(--white);
+    font-size: 15px;
+}
+
+#signup-button {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--black);
+    color: var(--white);
+    width: 78%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#signup-button:hover {
+    background-color: var(--dark-purple);
+}
+
+.login-container {
+    display: flex;
+    margin-left: 30px;
+}
+
+.login-container p{
+    margin-right: 10px;
+    color: var(--white);
+}
+
+.login-container a {
+    font-size: 16px;
+    font-family: "Roboto Condensed";
+    color: var(--white);
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 430px) {
+    .login-form-container h1 {
+        padding-left: 150px;
+    }
+
+    .singup-container h1 {
+        padding-left: 150px;
+    }
+}
+
+
+@media screen and (max-width: 478px) {
+    .form {
+        padding-left: 40px;
+        padding-top: 60px;
+    }
+
+    #forgot-password {
+        margin-right: 70px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .signup-form {
+        padding-left: 40px;
+        padding-top: 60px;
+    }
+
+    .login-container {
+        flex-direction: column;
+    }
+}
